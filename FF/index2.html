@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FF</title>
+    <style>
+        body{
+    background-color: #c7bac1;
+    font-size: 2rem;
+}
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        .box{
+            width: 1400px;
+            height: 700px;
+            margin:100px auto;
+            padding: 20px;
+            position: relative;
+
+        }
+
+        .text{
+            width: 700px;
+            height: 700px;
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            overflow: hidden;
+        }
+
+
+        .text>div{
+            width: 100%;
+            height: 100%;
+            position: relative;
+            animation: dhA 3s linear forwards;
+        }
+        .text div h4{
+            margin: 10px 0;
+            font-weight: 300;
+        }
+        .text div p{
+            font-size: 20px;
+        }
+        .text div a{
+            position: absolute;
+            bottom: 20px;
+            right: 20px;
+            color: black;
+            text-decoration: none;
+        }
+
+        @keyframes dhA {
+            0%{
+                transform: translateY(-100%);
+            }
+            100%{
+                transform: translateY(0);
+            }
+        }
+        /*  */
+        .imgA1{
+            width: 450px;
+            height: 260px;
+            background-color: blueviolet;
+            z-index: 99;
+            position: absolute;
+            left: 120px;
+            top: 100px;
+        }
+       
+        img{
+            width: 100%;
+            height: 100%;
+            cursor: pointer;
+        }
+
+        .imgA2{
+            width: 500px;
+            height: 260px;
+            background-color: rgb(213, 181, 67);
+            animation: dh2 2s linear forwards;
+            position: absolute;
+            z-index: 2;
+
+        }
+        
+        @keyframes dh2 {
+            0%{
+                left: 120px;
+            top: 100px;
+            }
+            100%{
+                left: 180px;
+
+                top: -50px;
+            }
+        }
+        /*  */
+        .imgA3{
+            width: 350px;
+            height: 260px;
+            background-color: rgb(213, 181, 67);
+            animation: dh3 2s linear forwards;
+            position: absolute;
+            z-index: 1;
+
+        }
+        
+        @keyframes dh3 {
+            0%{
+                left: 120px;
+            top: 100px;
+            }
+            100%{
+                left: 0;
+
+                top: -50px;
+            }
+        }
+        /*  */
+        .imgA4{
+            width: 300px;
+            height: 260px;
+            background-color: rgb(213, 181, 67);
+            animation: dh4 2s linear forwards;
+            position: absolute;
+            z-index: 1;
+
+        }
+        
+        @keyframes dh4 {
+            0%{
+                left: 120px;
+            top: 100px;
+            }
+            100%{
+                left: 400px;
+
+                top: 240px;
+            }
+        }
+        /*  */
+        .imgA5{
+            width: 400px;
+            height: 260px;
+            background-color: rgb(213, 181, 67);
+            animation: dh5 2s linear forwards;
+            position: absolute;
+            z-index: 1;
+
+        }
+        
+        @keyframes dh5 {
+            0%{
+                left: 120px;
+            top: 100px;
+            }
+            100%{
+                left: 50px;
+
+                top: 300px;
+            }
+        }
+        /*  */
+
+        .bigIMG{
+            width: 100%;
+            height: 100vh;
+            display: none;
+            position: relative;
+            position: fixed;
+            top: 0;
+            z-index: 999;
+            background-color: rgba(94, 92, 92, 0.6);
+        }
+        .bigIMG>div{
+            width: 1000px;
+            height: 600px;
+            margin: auto;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%,-50%);
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="imgA1">
+            <img src="./imgB/A.jpeg" alt="" srcset="">
+        </div>
+        <div class="imgA2">
+            <img src="./imgB/B.png" alt="" srcset="">
+        </div>
+        <div class="imgA3">
+            <img src="./imgB/C.jpeg" alt="" srcset="">
+        </div>
+        <div class="imgA4">
+            <img src="./imgB/D.jpeg" alt="" srcset="">
+        </div>
+        <div class="imgA5">
+            <img src="./imgB/E.jpeg" alt="" srcset="">
+        </div>
+        
+        <div class="text">
+            
+            <div>
+                <h4>DESSERT SHOP</h4>
+                <p>
+                    Eating dessert is a state. It makes people feel good and healing. This work is mainly aimed at the people who are under great pressure and have poor sleep, and who eat food to relieve the pressure and blindly eat dessert. Our dessert formula pure health, mystical ingredients can be added after not only enhance the taste, make the cake more fluffy, different types of desserts can also have a non-healing effect. After the customer is cured by the dessert in the shop, any pleasant and comfortable mood will be collected. In the pig's head above the terrace, the mood of peace and joy is transformed into electricity to the city pipes. 
+                </p>
+                <p style="margin: 20px 0;">PS: Piggy: collect the happy and peaceful mood in the shop, and turn it into electricity for the city. 
+
+                </p>
+                <p>Meaning: short-term relief from various human stressors, making it possible for them to love life in a better state, while making rational use of the happiness and emotions of their customers.</p>
+                <a href="index.html">back</a>
+            </div>
+        </div>
+    </div>
+    <div class="bigIMG">
+        <div><img src="" alt="" srcset=""></div>
+    </div>
+
+    <script>
+        const bigBox =document.querySelector('.bigIMG')
+        const bigIMG =document.querySelector('.bigIMG>div>img')
+        
+        const imgAll = document.querySelectorAll('div[class^="imgA"]>img')
+        console.log(imgAll);
+        for(let i = 0;i<imgAll.length;i++){
+            imgAll[i].addEventListener('click',function(){
+                bigBox.style.display = 'block'
+                bigIMG.src = imgAll[i].src
+            })
+        }
+        bigBox.addEventListener('click',function(){
+            bigBox.style.display = 'none'
+        })
+    </script>
+</body>
+</html>
