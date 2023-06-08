@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FF</title>
+    <style>
+        body{
+    background-color: rgb(154, 181, 154);
+    font-size: 2rem;
+}
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        .box{
+            width: 1400px;
+            height: 700px;
+            margin:100px auto;
+            padding: 20px;
+            position: relative;
+
+        }
+
+        .text{
+            width: 350px;
+            height: 550px;
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            overflow: hidden;
+        }
+
+
+        .text>div{
+            width: 100%;
+            height: 100%;
+            position: relative;
+            animation: dhA 3s linear forwards;
+        }
+        .text div h4{
+            text-align: center;
+            margin: 10px 0;
+            font-weight: 300;
+        }
+        .text div p{
+            font-size: 20px;
+        }
+        .text div a{
+            position: absolute;
+            bottom: 20px;
+            right: 20px;
+            color: black;
+            text-decoration: none;
+        }
+
+        @keyframes dhA {
+            0%{
+                transform: translateY(-100%);
+            }
+            100%{
+                transform: translateY(0);
+            }
+        }
+        /*  */
+        .imgA1{
+            width: 450px;
+            height: 250px;
+            background-color: blueviolet;
+            z-index: 99;
+            position: absolute;
+            left: 350px;
+            top: 100px;
+        }
+        .imgA2{
+            width: 300px;
+            height: 220px;
+            background-color: rgb(104, 91, 198);
+            z-index: 1;
+            animation: dhB 2s linear forwards;
+            position: absolute;
+
+        }
+
+        @keyframes dhB {
+            0%{
+                left: 200px;
+                top: 100px;
+            }
+            100%{
+                left: 100px;
+                top: -50px;
+            }
+        }
+
+        /*  */
+        .imgA3{
+            width: 260px;
+            height: 220px;
+            background-color: rgb(168, 42, 143);
+            animation: dhC 2s linear forwards;
+            position: absolute;
+            z-index: 2;
+
+        }
+        @keyframes dhC {
+            0%{
+                left: 300px;
+                top: 100px;
+            }
+            100%{
+                left: 50px;
+                top: 200px;
+            }
+        }
+        /*  */
+        .imgA4{
+            width: 370px;
+            height: 250px;
+            background-color: rgb(195, 152, 186);
+            animation: dhD 2s linear forwards;
+            position: absolute;
+            z-index: 3;
+
+        }
+        @keyframes dhD {
+            0%{
+                left: 300px;
+                top: 100px;
+            }
+            100%{
+                left: 0px;
+                top: 400px;
+            }
+        }
+        /*  */
+        .imgA5{
+            width: 330px;
+            height: 230px;
+            background-color: rgb(73, 192, 172);
+            animation: dhE 2s linear forwards;
+            position: absolute;
+            z-index: 1;
+
+        }
+        @keyframes dhE {
+            0%{
+                left: 300px;
+                top: 100px;
+            }
+            100%{
+                left: 300px;
+                top: 300px;
+            }
+        }
+        /*  */
+        .imgA6{
+            width: 330px;
+            height: 230px;
+            background-color: rgb(80, 25, 136);
+            animation: dhF 2s linear forwards;
+            position: absolute;
+            z-index: 1;
+
+        }
+        @keyframes dhF {
+            0%{
+                left: 300px;
+                top: 100px;
+            }
+            100%{
+                left: 550px;
+                top: 400px;
+            }
+        }
+          /*  */
+          .imgA7{
+            width: 300px;
+            height: 300px;
+            background-color: rgb(213, 181, 67);
+            animation: dhG 2s linear forwards;
+            position: absolute;
+            z-index: 2;
+
+        }
+        @keyframes dhG {
+            0%{
+                left: 300px;
+                top: 100px;
+            }
+            100%{
+                left: 650px;
+                top: 200px;
+            }
+        }
+        .imgA8{
+            width: 300px;
+            height: 200px;
+            background-color: rgb(213, 181, 67);
+            animation: dhK 2s linear forwards;
+            position: absolute;
+            z-index: 2;
+
+        }
+        
+        @keyframes dhK {
+            0%{
+                left: 300px;
+                top: 100px;
+            }
+            100%{
+                left: 720px;
+                top: -80px;
+            }
+        }
+        img{
+            width: 100%;
+            height: 100%;
+            cursor: pointer;
+        }
+
+        /*  */
+
+        .bigIMG{
+            width: 100%;
+            height: 100vh;
+            display: none;
+            position: relative;
+            position: fixed;
+            top: 0;
+            z-index: 999;
+            background-color: rgba(94, 92, 92, 0.6);
+
+        }
+        .bigIMG>div{
+            width: 1000px;
+            height: 600px;
+            margin: auto;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%,-50%);
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="imgA1">
+            <img src="../imgA/A.jpeg" alt="" srcset="">
+        </div>
+        <div class="imgA2">
+            <img src="../imgA/B.jpeg" alt="" srcset="">
+        </div>
+        <div class="imgA3">
+            <img src="../imgA/C.jpeg" alt="" srcset="">
+
+        </div>
+        <div class="imgA5">
+            <img src="../imgA/D.jpeg" alt="" srcset="">
+
+        </div>
+        <div class="imgA6">
+            <img src="../imgA/E.jpeg" alt="" srcset="">
+
+        </div>
+        <div class="imgA7">
+            <img src="../imgA/F.jpeg" alt="" srcset="">
+
+        </div>
+        <div class="imgA4">
+            <img src="../imgA/A.jpeg" alt="" srcset="">
+
+        </div>
+        <div class="imgA8">
+            <img src="../imgA/A.jpeg" alt="" srcset="">
+
+           
+        </div>
+        <div class="text">
+            
+            <div>
+                <h4>SPINNING HOUSE</h4>
+                <p>n Bosnia, a 72-year-old man named Vojin Kusic built a revolving home for his wife, Ljubica. Because she wanted their bedroom and living room to be open to the sun and free to change the view from the window. Vojin's home rotates on a 7-meter axis. The slowest speed is 24 hours to complete a lap. The rotation can be completed in up to 22 seconds. Vojin Kusic borrowed an electric motor and wheels from an old military transport and built a revolving home with his two hands.</p>
+                <a href="index.html">back</a>
+            </div>
+        </div>
+    </div>
+    <div class="bigIMG">
+        <div><img src="" alt="" srcset=""></div>
+    </div>
+
+    <script>
+        const bigBox =document.querySelector('.bigIMG')
+        const bigIMG =document.querySelector('.bigIMG>div>img')
+        
+        const imgAll = document.querySelectorAll('div[class^="imgA"]>img')
+        console.log(imgAll);
+        for(let i = 0;i<imgAll.length;i++){
+            imgAll[i].addEventListener('click',function(){
+                bigBox.style.display = 'block'
+                bigIMG.src = imgAll[i].src
+            })
+        }
+        bigBox.addEventListener('click',function(){
+            bigBox.style.display = 'none'
+        })
+    </script>
+</body>
+</html>
