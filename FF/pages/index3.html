@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FF</title>
+    <style>
+        body{
+    background-color: #5f6365;
+    font-size: 2rem;
+}
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        .box{
+            width: 1400px;
+            height: 800px;
+            margin:50px auto;
+            padding: 20px;
+            position: relative;
+
+        }
+
+        .text{
+            width: 500px;
+            height: 800px;
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            overflow: hidden;
+            z-index: 999;
+        }
+
+
+        .text>div{
+            width: 100%;
+            height: 100%;
+            position: relative;
+            animation: dhA 3s linear forwards;
+            color: white;
+        }
+        .text div h4{
+            margin: 10px 0;
+            font-weight: 300;
+        }
+        .text div p{
+            font-size: 20px;
+        }
+        .text div a{
+            position: absolute;
+            bottom: 20px;
+            right: 20px;
+            color: white;
+            text-decoration: none;
+        }
+
+        @keyframes dhA {
+            0%{
+                transform: translateY(-100%);
+            }
+            100%{
+                transform: translateY(0);
+            }
+        }
+        /*  */
+        .imgA1{
+            width: 600px;
+            height: 340px;
+            background-color: blueviolet;
+            z-index: 99;
+            position: absolute;
+            right: 720px;
+            bottom: 160px;
+        }
+       
+        img{
+            width: 100%;
+            height: 100%;
+            cursor: pointer;
+        }
+
+        .imgA2{
+            width: 500px;
+            height: 260px;
+            background-color: rgb(213, 181, 67);
+            animation: dh2 2s linear forwards;
+            position: absolute;
+            z-index: 2;
+
+        }
+        
+        @keyframes dh2 {
+            0%{
+                right: 720px;
+            bottom: 160px;
+            }
+            100%{
+                right: 520px;
+                bottom: 460px;
+            }
+        }
+        /*  */
+        .imgA3{
+            width: 500px;
+            height: 300px;
+            background-color: rgb(213, 181, 67);
+            animation: dh3 2s linear forwards;
+            position: absolute;
+            z-index: 1;
+
+        }
+        
+        @keyframes dh3 {
+            0%{
+                right: 720px;
+            bottom: 160px;
+            }
+            100%{
+                right: 920px;
+                bottom: 360px;
+            }
+        }/*  */
+        .imgA4{
+            width: 600px;
+            height: 280px;
+            background-color: rgb(213, 181, 67);
+            animation: dh4 2s linear forwards;
+            position: absolute;
+            z-index: 3;
+
+        }
+        
+        @keyframes dh4 {
+            0%{
+                right: 720px;
+            bottom: 160px;
+            }
+            100%{
+                right: 880px;
+                bottom: 300px;
+            }
+        }
+
+        /*  */
+        .imgA5{
+            width: 250px;
+            height: 140px;
+            background-color: rgb(213, 181, 67);
+            animation: dh5 2s linear forwards;
+            position: absolute;
+            z-index: 3;
+
+        }
+        
+        @keyframes dh5 {
+            0%{
+                right: 720px;
+            bottom: 160px;
+            }
+            100%{
+                right: 1180px;
+                bottom: 100px;
+            }
+        }
+        /*  */
+        .imgA6{
+            width: 450px;
+            height: 250px;
+            background-color: rgb(213, 181, 67);
+            animation: dh6 2s linear forwards;
+            position: absolute;
+            z-index: 3;
+
+        }
+        
+        @keyframes dh6 {
+            0%{
+                right: 720px;
+            bottom: 160px;
+            }
+            100%{
+                right: 400px;
+                bottom: 70px;
+            }
+        }
+        /*  */
+
+        .bigIMG{
+            width: 100%;
+            height: 100vh;
+            display: none;
+            position: relative;
+            position: fixed;
+            top: 0;
+            z-index: 999;
+            background-color: rgba(94, 92, 92, 0.6);
+        }
+        .bigIMG>div{
+            width: 1000px;
+            height: 600px;
+            margin: auto;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%,-50%);
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="imgA1">
+            <img src="../imgC/A.jpeg" alt="" srcset="">
+        </div>
+        <div class="imgA2">
+            <img src="../imgC/B.png" alt="" srcset="">
+        </div>
+     
+        <div class="imgA3">
+            <img src="../imgC/C.png" alt="" srcset="">
+        </div>
+        <div class="imgA4">
+            <img src="../imgC/D.png" alt="" srcset="">
+        </div>
+        <div class="imgA5">
+            <img src="../imgC/E.png" alt="" srcset="">
+        </div>
+        <div class="imgA6">
+            <img src="../imgC/F.png" alt="" srcset="">
+        </div>
+        <div class="text">
+            
+            <div>
+                <h4>THE FLUTE
+                </h4>
+                <p>So far I have two flutes before and after, flute is accompany me the longest time of musical instrument, witness my growth, like my shadow, like my organ. My relationship with an object is not just that I own it when I buy it. My relationship with the flute is my relationship with myself. The way I relate to the flute reflects the way I relate to other individuals and to society. In this project, the flute is no longer an ordinary still life, I try to use my flute as a contact point, to express their emotional debt to their families and some reconciliation with their hearts. I try to explore in depth the ways in which memories and emotions of private objects relate to those of their owners, to themselves, to their surroundings, and to their social relationships, through the close connection between private objects and their owners.</p>
+                <p>Meaning: short-term relief from various human stressors, making it possible for them to love life in a better state, while making rational use of the happiness and emotions of their customers.</p>
+                <a href="index.html">back</a>
+            </div>
+        </div>
+    </div>
+    <div class="bigIMG">
+        <div><img src="" alt="" srcset=""></div>
+    </div>
+
+    <script>
+        const bigBox =document.querySelector('.bigIMG')
+        const bigIMG =document.querySelector('.bigIMG>div>img')
+        
+        const imgAll = document.querySelectorAll('div[class^="imgA"]>img')
+        console.log(imgAll);
+        for(let i = 0;i<imgAll.length;i++){
+            imgAll[i].addEventListener('click',function(){
+                bigBox.style.display = 'block'
+                bigIMG.src = imgAll[i].src
+            })
+        }
+        bigBox.addEventListener('click',function(){
+            bigBox.style.display = 'none'
+        })
+    </script>
+</body>
+</html>

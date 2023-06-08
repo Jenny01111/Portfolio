@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FF</title>
+    <style>
+        body{
+    background-color: #a1b2ba;
+    font-size: 2rem;
+}
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        .box{
+            width: 1400px;
+            height: 800px;
+            margin:50px auto;
+            padding: 20px;
+            position: relative;
+
+        }
+
+        .text{
+            width: 600px;
+            height: 400px;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            overflow: hidden;
+            z-index: 999;
+        }
+
+
+        .text>div{
+            width: 100%;
+            height: 100%;
+            position: relative;
+            animation: dhA 3s linear forwards;
+            color: rgb(0, 0, 0);
+        }
+        .text div h4{
+            margin: 10px 0;
+            font-weight: 300;
+        }
+        .text div p{
+            font-size: 20px;
+        }
+        .box> a{
+            position: absolute;
+            bottom: 20px;
+            right: 0px;
+            color: rgb(0, 0, 0);
+            text-decoration: none;
+        }
+
+        @keyframes dhA {
+            0%{
+                transform: translateY(-100%);
+            }
+            100%{
+                transform: translateY(0);
+            }
+        }
+        /*  */
+        .imgA1{
+            width: 370px;
+            height: 440px;
+            background-color: blueviolet;
+            z-index: 99;
+            position: absolute;
+            right: 160px;
+            bottom: 160px;
+        }
+       
+        img{
+            width: 100%;
+            height: 100%;
+            cursor: pointer;
+        }
+
+        .imgA2{
+            width: 400px;
+            height: 400px;
+            background-color: rgb(213, 181, 67);
+            animation: dh2 2s linear forwards;
+            position: absolute;
+            z-index: 2;
+
+        }
+        
+        @keyframes dh2 {
+            0%{
+                right: 160px;
+            bottom: 160px;
+            }
+            100%{
+                right: -40px;
+                bottom: 300px;
+            }
+        }
+    
+        .imgA3{
+            width: 300px;
+            height: 350px;
+            background-color: rgb(213, 181, 67);
+            animation: dh3 2s linear forwards;
+            position: absolute;
+            z-index: 2;
+
+        }
+        
+        @keyframes dh3 {
+            0%{
+                right: 160px;
+            bottom: 160px;
+            }
+            100%{
+                right: 400px;
+                bottom: 390px;
+            }
+        }
+        .imgA4{
+            width: 300px;
+            height: 350px;
+            background-color: rgb(213, 181, 67);
+            animation: dh4 2s linear forwards;
+            position: absolute;
+            z-index: 2;
+
+        }
+        
+        @keyframes dh4 {
+            0%{
+                right: 160px;
+            bottom: 160px;
+            }
+            100%{
+                right: 400px;
+                bottom: -30px;
+            }
+        }
+        .bigIMG{
+            width: 100%;
+            height: 100vh;
+            display: none;
+            position: relative;
+            position: fixed;
+            top: 0;
+            z-index: 999;
+            background-color: rgba(94, 92, 92, 0.6);
+        }
+        .bigIMG>div{
+            width: 1000px;
+            height: 600px;
+            margin: auto;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%,-50%);
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+                <a href="index.html">back</a>
+
+        <div class="imgA1">
+            <img src="../imgE/A.jpeg" alt="" srcset="">
+        </div>
+        <div class="imgA2">
+            <img src="../imgE/B.jpeg" alt="" srcset="">
+        </div>
+        <div class="imgA3">
+            <img src="../imgE/C.jpeg" alt="" srcset="">
+        </div>
+        <div class="imgA4">
+            <img src="../imgE/D.jpeg" alt="" srcset="">
+        </div>
+       
+        <div class="text">
+            
+            <div>
+                <h4>GREEN PAPPER
+                </h4>
+                <p>Green pepper is a typical fruit and vegetable that people are in frequent contact with. People's evaluation of green pepper has been in a state of polarization. Some people Hands All Over it, while those who don't like green pepper feel that it tastes like wax, like chewing plastic. The project tries to discuss the relationship between natural fruits and vegetables and industrialization. A giant green pepper appears in the floor, but it is the touch and nature of plastic. Look like fresh fruits and vegetables, in the end should appear where </p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="bigIMG">
+        <div><img src="" alt="" srcset=""></div>
+    </div>
+
+    <script>
+        const bigBox =document.querySelector('.bigIMG')
+        const bigIMG =document.querySelector('.bigIMG>div>img')
+        
+        const imgAll = document.querySelectorAll('div[class^="imgA"]>img')
+        console.log(imgAll);
+        for(let i = 0;i<imgAll.length;i++){
+            imgAll[i].addEventListener('click',function(){
+                bigBox.style.display = 'block'
+                bigIMG.src = imgAll[i].src
+            })
+        }
+        bigBox.addEventListener('click',function(){
+            bigBox.style.display = 'none'
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FF</title>
+    <style>
+        body{
+    background-color: #616263;
+    font-size: 2rem;
+}
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        .box{
+            width: 1400px;
+            height: 800px;
+            margin:50px auto;
+            padding: 20px;
+            position: relative;
+
+        }
+
+        .text{
+            width: 350px;
+            height: 700px;
+            position: fixed;
+            background-color: antiquewhite;
+            border-radius: 20px;
+            right: 0;
+            top: 100px;
+            overflow: hidden;
+            z-index: 999;
+            line-height: 40px;
+            font-size: 23px;
+            padding: 20px;
+            box-sizing: border-box;
+            animation: dhA 3s linear forwards;
+
+        }
+
+        @keyframes dhA {
+            0%{
+                right: -350px;
+            }
+            100%{
+                right: 30px;
+            }
+        }
+
+
+        .text>div{
+            width: 100%;
+            height: 100%;
+            position: relative;
+            color: rgb(0, 0, 0);
+        }
+        .text div h4{
+            margin: 10px 0;
+            font-weight: 300;
+        }
+        .text div p{
+            font-size: 20px;
+        }
+        .text div a{
+            position: absolute;
+            bottom: 20px;
+            right: 20px;
+            color: rgb(0, 0, 0);
+            text-decoration: none;
+        }
+
+        .video{
+            width: 1000px;
+            height: 600px;
+            margin:100px 0;
+
+        }
+        .video>video{
+            width: 100%;
+            height: 100%;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box">
+
+        <div class="video"><video src="../video/A.mp4" controls autoplay></video></div>
+      
+    </div>
+  
+    <div class="text">
+            
+        <div>
+            <h4>MAYFLIES
+            </h4>
+            <p>I wonder if mayflies are the same as the world I see  I may not want an outcome, but a thought process. This is my“Death and life” simple expression and thinking.Ephemera is a metaphor. It is different from us. As a human being, I endow death with the temperature of life. Life makes me feel all this.</p>
+                <a href="index.html">back</a>
+
+        </div>
+    </div>
+</body>
+</html>
