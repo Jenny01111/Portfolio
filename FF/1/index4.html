@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FF</title>
+    <style>
+        body{
+    background-color: #a1b2ba;
+    font-size: 2rem;
+}
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        .box{
+            width: 1400px;
+            height: 800px;
+            margin:50px auto;
+            padding: 20px;
+            position: relative;
+
+        }
+
+        .text{
+            width: 600px;
+            height: 400px;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            overflow: hidden;
+            z-index: 999;
+        }
+
+
+        .text>div{
+            width: 100%;
+            height: 100%;
+            position: relative;
+            animation: dhA 3s linear forwards;
+            color: rgb(0, 0, 0);
+        }
+        .text div h4{
+            margin: 10px 0;
+            font-weight: 300;
+        }
+        .text div p{
+            font-size: 20px;
+        }
+        .box> a{
+            position: absolute;
+            bottom: 20px;
+            right: 0px;
+            color: rgb(0, 0, 0);
+            text-decoration: none;
+        }
+
+        @keyframes dhA {
+            0%{
+                transform: translateY(-100%);
+            }
+            100%{
+                transform: translateY(0);
+            }
+        }
+        /*  */
+        .imgA1{
+            width: 370px;
+            height: 540px;
+            background-color: blueviolet;
+            z-index: 99;
+            position: absolute;
+            right: 160px;
+            bottom: 160px;
+        }
+       
+        img{
+            width: 100%;
+            height: 100%;
+            cursor: pointer;
+        }
+
+        .imgA2{
+            width: 260px;
+            height: 360px;
+            background-color: rgb(213, 181, 67);
+            animation: dh2 2s linear forwards;
+            position: absolute;
+            z-index: 2;
+
+        }
+        
+        @keyframes dh2 {
+            0%{
+                right: 160px;
+            bottom: 160px;
+            }
+            100%{
+                right: -40px;
+                bottom: 400px;
+            }
+        }
+        /*  */
+        .imgA3{
+            width: 260px;
+            height: 360px;
+            background-color: rgb(213, 181, 67);
+            animation: dh3 2s linear forwards;
+            position: absolute;
+            z-index: 1;
+
+        }
+        
+        @keyframes dh3 {
+            0%{
+                right: 160px;
+            bottom: 160px;
+            }
+            100%{
+                right: 0px;
+                bottom: 250px;
+            }
+        }
+
+          /*  */
+          .imgA4{
+            width: 220px;
+            height: 360px;
+            background-color: rgb(213, 181, 67);
+            animation: dh4 2s linear forwards;
+            position: absolute;
+            z-index: 1;
+
+        }
+        
+        @keyframes dh4 {
+            0%{
+                right: 160px;
+            bottom: 160px;
+            }
+            100%{
+                right: 140px;
+                bottom: 0px;
+            }
+        }
+          /*  */
+          .imgA5{
+            width: 80px;
+            height: 360px;
+            background-color: rgb(213, 181, 67);
+            animation: dh5 2s linear forwards;
+            position: absolute;
+            z-index: 2;
+
+        }
+        
+        @keyframes dh5 {
+            0%{
+                right: 160px;
+            bottom: 160px;
+            }
+            100%{
+                right: 360px;
+                bottom: 80px;
+            }
+        }
+        /*  */
+         /*  */
+         .imgA6{
+            width: 220px;
+            height: 360px;
+            background-color: rgb(213, 181, 67);
+            animation: dh6 2s linear forwards;
+            position: absolute;
+            z-index: 2;
+
+        }
+        
+        @keyframes dh6 {
+            0%{
+                right: 160px;
+            bottom: 160px;
+            }
+            100%{
+                right: 440px;
+                bottom: 120px;
+            }
+        }
+        /*  */
+        .imgA7{
+            width: 220px;
+            height: 360px;
+            background-color: rgb(213, 181, 67);
+            animation: dh7 2s linear forwards;
+            position: absolute;
+            z-index: 2;
+
+        }
+        
+        @keyframes dh7 {
+            0%{
+                right: 160px;
+            bottom: 160px;
+            }
+            100%{
+                right: 570px;
+                bottom: 0px;
+            }
+        }
+        /*  */
+        /*  */
+        .imgA8{
+            width: 200px;
+            height: 260px;
+            background-color: rgb(213, 181, 67);
+            animation: dh8 2s linear forwards;
+            position: absolute;
+            z-index: 1;
+
+        }
+        
+        @keyframes dh8 {
+            0%{
+                right: 160px;
+            bottom: 160px;
+            }
+            100%{
+                right: 540px;
+                bottom: 370px;
+            }
+        }
+        /*  */
+        .imgA9{
+            width: 100px;
+            height: 260px;
+            background-color: rgb(213, 181, 67);
+            animation: dh9 2s linear forwards;
+            position: absolute;
+            z-index: 2;
+
+        }
+        
+        @keyframes dh9 {
+            0%{
+                right: 160px;
+            bottom: 160px;
+            }
+            100%{
+                right: 500px;
+                bottom: 550px;
+            }
+        }
+        .bigIMG{
+            width: 100%;
+            height: 100vh;
+            display: none;
+            position: relative;
+            position: fixed;
+            top: 0;
+            z-index: 999;
+            background-color: rgba(94, 92, 92, 0.6);
+        }
+        .bigIMG>div{
+            width: 1000px;
+            height: 600px;
+            margin: auto;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%,-50%);
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+                <a href="index.html">back</a>
+
+        <div class="imgA1">
+            <img src="./imgD/A.jpeg" alt="" srcset="">
+        </div>
+        <div class="imgA2">
+            <img src="./imgD/B.jpeg" alt="" srcset="">
+        </div>
+        <div class="imgA3">
+            <img src="./imgD/C.jpeg" alt="" srcset="">
+        </div>
+        <div class="imgA4">
+            <img src="./imgD/D.jpeg" alt="" srcset="">
+        </div>
+        <div class="imgA5">
+            <img src="./imgD/E.jpeg" alt="" srcset="">
+        </div>
+        <div class="imgA6">
+            <img src="./imgD/F.jpeg" alt="" srcset="">
+        </div>
+        <div class="imgA7">
+            <img src="./imgD/G.jpeg" alt="" srcset="">
+        </div>
+     
+        <div class="imgA8">
+            <img src="./imgD/H.jpeg" alt="" srcset="">
+        </div>
+        <div class="imgA9">
+            <img src="./imgD/I.jpeg" alt="" srcset="">
+        </div>
+        <div class="text">
+            
+            <div>
+                <h4>THE COLOUR OF THE RAIN
+                </h4>
+                <p>Rainy Day is the most common, the rain single 
+                    single single out, it is crystal clear, colorless. But 
+                    to connect rain with everything in the world, 
+                    to use rain as a medium, to see what the world 
+                    looks like, I will use physical collage to express 
+                    my perception of the color of rain, trying to 
+                    explore the world from a new perspective, to 
+                    perceive the connection between rain and the 
+                    world and rain and the self.</p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="bigIMG">
+        <div><img src="" alt="" srcset=""></div>
+    </div>
+
+    <script>
+        const bigBox =document.querySelector('.bigIMG')
+        const bigIMG =document.querySelector('.bigIMG>div>img')
+        
+        const imgAll = document.querySelectorAll('div[class^="imgA"]>img')
+        console.log(imgAll);
+        for(let i = 0;i<imgAll.length;i++){
+            imgAll[i].addEventListener('click',function(){
+                bigBox.style.display = 'block'
+                bigIMG.src = imgAll[i].src
+            })
+        }
+        bigBox.addEventListener('click',function(){
+            bigBox.style.display = 'none'
+        })
+    </script>
+</body>
+</html>
